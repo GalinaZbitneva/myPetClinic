@@ -71,7 +71,7 @@
 	</build>
 	<scm>
 			<developerConnection>scm:git:https://github.com/GalinaZbitneva/myPetClinic.git</developerConnection>
-	  <tag>myPetClinic-0.0.1</tag>
+			<tag>HEAD</tag>
   </scm>
 
 </project>
