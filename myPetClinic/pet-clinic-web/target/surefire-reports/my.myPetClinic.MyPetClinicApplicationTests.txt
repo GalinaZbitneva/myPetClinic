@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: my.myPetClinic.MyPetClinicApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.428 s -- in my.myPetClinic.MyPetClinicApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.803 s -- in my.myPetClinic.MyPetClinicApplicationTests

@@ -1,5 +1,14 @@
+/Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/model/BaseEntity.java
 /Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/model/Owner.java
 /Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/model/Person.java
 /Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/model/Pet.java
 /Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/model/PetType.java
 /Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/model/Vet.java
+/Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/services/CrudService.java
+/Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/services/OwnerService.java
+/Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/services/PetService.java
+/Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/services/VetService.java
+/Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/services/map/AbstractMapService.java
+/Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/services/map/OwnerServiceMap.java
+/Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/services/map/PetServiceMap.java
+/Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-data/src/main/java/my/myPetClinic/services/map/VetServiceMap.java
