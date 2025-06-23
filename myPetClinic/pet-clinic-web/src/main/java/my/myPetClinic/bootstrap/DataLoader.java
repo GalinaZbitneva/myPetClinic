@@ -1,8 +1,10 @@
 package my.myPetClinic.bootstrap;
 
 import my.myPetClinic.model.Owner;
+import my.myPetClinic.model.PetType;
 import my.myPetClinic.model.Vet;
 import my.myPetClinic.services.OwnerService;
+import my.myPetClinic.services.PetTypeService;
 import my.myPetClinic.services.VetService;
 import my.myPetClinic.services.map.OwnerServiceMap;
 import my.myPetClinic.services.map.VetServiceMap;
@@ -15,14 +17,25 @@ public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
+    private final PetTypeService petTypeService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
+        this.petTypeService = petTypeService;
     }
 
     @Override
     public void run(String... args) throws Exception {
+
+        PetType dog = new PetType();
+        dog.setName("Dog");
+        PetType saveDogPetType = petTypeService.save(dog);
+
+        PetType cat = new PetType();
+        cat.setName("Cat");
+        PetType saveCatPetType = petTypeService.save(cat);
+
         Owner owner1= new Owner();
 
         owner1.setFirstName("Galina");
