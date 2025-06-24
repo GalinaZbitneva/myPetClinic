@@ -1,6 +1,7 @@
 package my.myPetClinic.bootstrap;
 
 import my.myPetClinic.model.Owner;
+import my.myPetClinic.model.Pet;
 import my.myPetClinic.model.PetType;
 import my.myPetClinic.model.Vet;
 import my.myPetClinic.services.OwnerService;
@@ -11,6 +12,8 @@ import my.myPetClinic.services.map.VetServiceMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import java.time.LocalDate;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -30,16 +33,26 @@ public class DataLoader implements CommandLineRunner {
 
         PetType dog = new PetType();
         dog.setName("Dog");
-        PetType saveDogPetType = petTypeService.save(dog);
+        PetType savedDogPetType = petTypeService.save(dog);
 
         PetType cat = new PetType();
         cat.setName("Cat");
-        PetType saveCatPetType = petTypeService.save(cat);
+        PetType savedCatPetType = petTypeService.save(cat);
 
         Owner owner1= new Owner();
 
         owner1.setFirstName("Galina");
         owner1.setLastName("Zbitneva");
+        owner1.setAddress("Lubimovo 18/1");
+        owner1.setCity("Krasnodar");
+        owner1.setTelephone("1212121");
+
+        Pet somePet = new Pet();
+        somePet.setPetType(savedDogPetType);
+        somePet.setOwner(owner1);
+        somePet.setBirthDate(LocalDate.now());
+        somePet.setName("Rosco");
+        owner1.getPets().add(somePet);
 
         ownerService.save(owner1);
 
@@ -47,6 +60,16 @@ public class DataLoader implements CommandLineRunner {
 
         owner2.setFirstName("Evgenii");
         owner2.setLastName("Zbitnev");
+        owner2.setAddress("Lubimovo 18/1 181");
+        owner2.setCity("Krasnodar 1");
+        owner2.setTelephone("34353536");
+
+        Pet anotherPet = new Pet();
+        anotherPet.setPetType(savedCatPetType);
+        anotherPet.setName("Murka");
+        anotherPet.setBirthDate(LocalDate.now());
+        anotherPet.setOwner(owner2);
+        owner2.getPets().add(anotherPet);
 
         ownerService.save(owner2);
 
