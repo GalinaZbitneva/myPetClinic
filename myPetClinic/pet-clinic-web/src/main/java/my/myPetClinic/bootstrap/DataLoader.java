@@ -9,9 +9,6 @@ import my.myPetClinic.services.OwnerService;
 import my.myPetClinic.services.PetTypeService;
 import my.myPetClinic.services.SpecialtyService;
 import my.myPetClinic.services.VetService;
-import my.myPetClinic.services.map.OwnerServiceMap;
-import my.myPetClinic.services.map.VetServiceMap;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
