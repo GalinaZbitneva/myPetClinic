@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: my.myPetClinic.controllers.OwnerControllerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! -- in my.myPetClinic.controllers.OwnerControllerTest
-my.myPetClinic.controllers.OwnerControllerTest.findOwners -- Time elapsed: 0.004 s <<< ERROR!
-java.lang.NoSuchMethodError: 'org.mockito.plugins.MockitoLogger org.mockito.internal.configuration.plugins.Plugins.getMockitoLogger()'
-	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-
-my.myPetClinic.controllers.OwnerControllerTest.listOwners -- Time elapsed: 0.001 s <<< ERROR!
-java.lang.NoSuchMethodError: 'org.mockito.plugins.MockitoLogger org.mockito.internal.configuration.plugins.Plugins.getMockitoLogger()'
-	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:159)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 s -- in my.myPetClinic.controllers.OwnerControllerTest
