@@ -20,6 +20,7 @@ import static net.bytebuddy.matcher.ElementMatchers.is;
 import static org.hamcrest.beans.HasProperty.hasProperty;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.Mockito.verifyZeroInteractions;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -56,15 +57,8 @@ class OwnerControllerTest {
         mockMvc = MockMvcBuilders.standaloneSetup(controller).build();
     }
 
-    @Test
-    void listOwners() throws Exception {
-        when(ownerService.findAll()).thenReturn(owners);
 
-        mockMvc.perform(get("/owners"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("owners/index"))
-                .andExpect(model().attributeExists("owners"));
-    }
+
 
     @Test
     void showOwner() throws Exception {
@@ -78,6 +72,17 @@ class OwnerControllerTest {
                 .andExpect(view().name("owners/ownerDetails"))
                 .andExpect(model().attributeExists("owner"));
     }
+
+    @Test
+    void findOwners() throws Exception {
+        mockMvc.perform(get("/owners/find"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("owners/findOwners"))
+                .andExpect(model().attributeExists("owner"));
+
+        verifyZeroInteractions(ownerService);
+    }
+
 }
 
 
