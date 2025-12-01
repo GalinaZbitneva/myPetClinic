@@ -8,7 +8,15 @@ import jakarta.persistence.Table;
 @Table(name = "types")
 public class PetType extends BaseEntity{
 
-   @Column(name = "name")
+    public  PetType(Long id, String name){
+        this.setId(id);
+        this.name = name;
+    }
+
+    public PetType() {
+    }
+
+    @Column(name = "name")
     private String name;
 
     public String getName() {
