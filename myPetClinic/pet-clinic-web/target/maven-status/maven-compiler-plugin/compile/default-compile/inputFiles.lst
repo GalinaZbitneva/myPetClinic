@@ -2,4 +2,7 @@
 /Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-web/src/main/java/my/myPetClinic/bootstrap/DataLoader.java
 /Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-web/src/main/java/my/myPetClinic/controllers/IndexController.java
 /Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-web/src/main/java/my/myPetClinic/controllers/OwnerController.java
+/Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-web/src/main/java/my/myPetClinic/controllers/PetController.java
 /Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-web/src/main/java/my/myPetClinic/controllers/VetController.java
+/Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-web/src/main/java/my/myPetClinic/controllers/VisitController.java
+/Users/galinazbitneva/Documents/JAVA_projects/myPetClinic/myPetClinic/pet-clinic-web/src/main/java/my/myPetClinic/formatters/PetTypeFormatter.java

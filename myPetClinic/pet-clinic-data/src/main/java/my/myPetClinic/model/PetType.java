@@ -28,7 +28,7 @@ public class PetType extends BaseEntity{
     }
 
 
-
+//метод toString понадобился чтобы корректно парсился хтмл файл
     @Override
     public String toString() {
         return name;

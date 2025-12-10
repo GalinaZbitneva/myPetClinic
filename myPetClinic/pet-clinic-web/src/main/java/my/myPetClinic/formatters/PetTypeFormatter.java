@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.text.ParseException;
 import java.util.Collection;
 import java.util.Locale;
-
+//класс используется как расширение для парсинга html файла
 /**
  * Created by jt on 9/22/18.
  */
