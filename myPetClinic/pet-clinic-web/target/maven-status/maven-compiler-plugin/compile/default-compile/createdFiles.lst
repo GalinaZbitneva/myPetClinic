@@ -1,0 +1,8 @@
+my/myPetClinic/formatters/PetTypeFormatter.class
+my/myPetClinic/bootstrap/DataLoader.class
+my/myPetClinic/controllers/IndexController.class
+my/myPetClinic/controllers/VisitController.class
+my/myPetClinic/controllers/PetController.class
+my/myPetClinic/controllers/OwnerController.class
+my/myPetClinic/MyPetClinicApplication.class
+my/myPetClinic/controllers/VetController.class
